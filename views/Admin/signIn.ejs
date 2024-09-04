@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="/ClientStyles/style.css" rel="stylesheet" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2 class="h2">Admin Login</h2>
+      <form action="/admin/login" method="POST">
+        <div class="input-group">
+          <label for="adminName">Username</label>
+          <input type="text" id="adminName" name="adminName"  />
+          <small class="errmsg">&nbsp;</small>
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password"/>
+          <small class="errmsg">&nbsp;</small>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <div class="signup-link">
+        <p>Don't have an account? <a class="underline" href="/signUp">Sign Up</a></p>
+      </div>
+      <div class="back"><a class="go" href="/">Go Back</a></div>
+    </div>
+  </body>
+</html>
